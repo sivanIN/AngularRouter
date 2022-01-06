@@ -1,0 +1,18 @@
+body{
+    background-color: cadetblue;
+}
+.contact{
+    text-decoration: none;
+    position:relative;
+    float: right;
+    padding: 15px;
+    padding-top: 35px;
+    color: black;
+
+}
+.contact:hover{
+    color:blue;
+}
+.title{
+    position: absolute
+}

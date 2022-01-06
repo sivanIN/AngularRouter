@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+
+    <div ng-controller="loginCtrl">
+        <div class="container">
+            <h1 class="title">Ayyan Future College</h1>
+            <div ng-controller="logoutCtrl">
+                <a href="" ng-click="contacts()" class="contact">CONTACTS</a>
+                
+                <!-- <button type="submit"  class="contact" ng-click="sumbit()">LOGOUT</button>   <br>  -->
+            </div>
+        </div>
+
+        <form action="/">  
+          <p style="padding-left: 10px;">Login to check courses</p>
+            <label>Username : </label>   <br>
+            <input type="text" placeholder="Enter Username" name="username" ng-model="username" required>  <br>
+            <label>Password : </label>   <br>
+            <input type="password" placeholder="Enter Password" name="password"  ng-model="password" required>  <br> <br>
+            <button type="submit" ng-click="sumbit()">Login</button>   <br> 
+            Forgot <a href="#"> password? </a>   
+        
+    </form>   
+
+    </div>
+     
+</body>
+</html>

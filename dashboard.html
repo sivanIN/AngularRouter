@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en" ng-app="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body style="background-color: aquamarine;" >
+      
+    
+    <div  ng-init="myText='Angular Class'">
+        
+        <h1 class="title">{{myText}}</h1>
+        <!-- <a href="" class="contact">CONTACTS</a> -->
+
+        <div ng-controller="logoutCtrl">
+            <a href="" ng-click="contacts()" class="contact">CONTACTS</a>
+            <a href="" ng-click="logout()" class="contact">LOGOUT</a>
+            <!-- <button type="submit"  class="contact" ng-click="sumbit()">LOGOUT</button>   <br>  -->
+        </div>
+        
+    
+        <input style="margin-left: 200px ; margin-top: 150px;"; type="text" placeholder="Course" ng-model="name">
+        <h1 style="margin-left: 200px">{{name}}</h1>
+       
+     <div ng-init="favlanguage=[{course:'java',extension:'101'},
+      {course:'php',extension:'102'} ,
+      {course:'c',extension:'103'}]">    
+    
+      <!-- ng-repeat it repeat like a loop --> 
+    <ul style="margin-left: 200px;">
+        <li ng-repeat="language in favlanguage">
+            Course Name :{{language.course}}
+            <br>
+            Course Code : {{language.extension}}
+        </li>
+    </ul>
+    
+  
+      
+    
+    </div>
+    </body>
+    </html>
+  
